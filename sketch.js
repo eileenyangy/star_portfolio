@@ -1,6 +1,5 @@
 // --- Configuration ---
-const W = 900;
-const H = 600;
+let W, H;
 const NUM_POINTS = 5;
 
 const BIG_RADIUS = 110;
@@ -25,10 +24,19 @@ const STEPS_BIG = 26;
 const STEPS_SMALL = 12;
 
 function setup() {
+  W = windowWidth;
+  H = windowHeight;
   createCanvas(W, H);
   textFont("monospace");
   textAlign(CENTER, CENTER);
   noStroke();
+}
+
+// Resize canvas when the container/window changes
+function windowResized() {
+  W = windowWidth;
+  H = windowHeight;
+  resizeCanvas(W, H);
 }
 
 function draw() {
