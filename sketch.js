@@ -2,8 +2,8 @@
 let W, H;
 const NUM_POINTS = 5;
 
-const BIG_RADIUS = 110;
-const SMALL_RADIUS = 40;
+const BIG_RADIUS = 70;
+const SMALL_RADIUS = 25;
 const PULSE_AMOUNT = 0.12;
 
 // 3D rotation speeds
@@ -20,8 +20,8 @@ const DEPTH_SPACING = 8;
 // ASCII characters
 const CHARS = ["*", "*", "*", ".", "+", "·", "°", "*"];
 
-const STEPS_BIG = 26;
-const STEPS_SMALL = 12;
+const STEPS_BIG = 18;
+const STEPS_SMALL = 8;
 
 function setup() {
   W = windowWidth;
